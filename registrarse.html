@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse</title>
+        <link href='style/style_reg.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="col-10">
+            <!-- Header, con el nombre y el logo de la pagina -->
+            <img id="logo_principal" src="images/logo_principal.png" alt="Logo web">
+            <h1 class="col-2" id="nom_pagina">Apple Music</h1>
+            <!-- Botones funcionales de inicio de sesion -->
+            <a id="bot_ini" href="iniciar_sesion.html">Iniciar Sesión</a>
+            </div>
+        </header>
+        <div class="row">
+            <aside class="col-2">
+                <!-- Menu con 3 opciones funcionales -->
+                <ul>
+                    <li class="menu">
+                        <img class="logos_menu" src="images/apple.png" alt="Logo web">
+                        <a class="link_menu" href="index.html">Inicio</a>
+                    </li>
+                    <li class="menu">   
+                        <img class="logos_menu" src="images/lupa.png" alt="Logo web"> 
+                        <a class="link_menu" href="iniciar_sesion.html">Buscar</a>
+                    </li>
+                    <li class="menu">
+                        <img class="logos_menu" src="images/archivo.png" alt="Logo web">
+                        <a class="link_menu" href="iniciar_sesion.html">Archivo</a>
+                    </li>
+                </ul>
+                <!-- Links extra funcionales para la politica de privacidad y cookies -->
+                <div class="links col-2">
+                    <a id="pol_priv" href="politica_priv.html">Privacidad</a>
+                    <a id="cookies" href="cookies.html">Cookies</a>
+                </div>
+            </aside>
+            <main class="col-8" id="main2">
+                <h1 id="tit_form">Formulario de Registro</h1>
+                <form id="form1" method="post" onsubmit="checkCookie()">
+                    <label for="uname">Nombre de usuario:</label><br>
+                    <input type="text" id="uname" name="uname" required><br><br>
+                    <label for="pword">Contraseña:</label><br>
+                    <input type="password" id="pword" maxlength="8" pattern="[A-Za-z0-9]+" title="Solo letras y números, max 8 caracteres" name="pword" required><br><br>
+                    <label for="fname">Nombre completo:</label><br>
+                    <input type="text" id="fname" size="30" name="fname" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" size="30" placeholder="nombre@dominio.ext" name="email" required><br><br>
+                    <label for="fecnac">Fecha de nacimiento:</label><br>
+                    <input type="date" id="fecnac" name="fecnac" required><br><br>
+                    <label for="fperfil">Escoge tu foto de perfil:</label><br>
+                    <input type="file" accept="image/*" id="fperfil" name="fperfil"><br><br>
+                    <input type="checkbox" id="acond" name="acep_condi" value="Accept">
+                    <label for="acond">He leido y acepto las Condiciones de uso</label><br><br>
+                    <input type="submit" value="Registrarse">
+                    <input type="reset" value="Borrar campos">
+                </form>
+            </main>
+        </div>
+        <footer class="col-10">
+            <!-- Footer con link funcional para registrar nuevos usuarios -->
+            <a id="texto_footer" href="registrarse.html">Regístrate ahora para acceder a todo el contenido</a>
+        </footer>
+        <script src="script/cookies.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</html>
