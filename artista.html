@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link href='style/style.css' rel='stylesheet'>
+        <link href='style/sesion_abierta.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body >
+        <header class="col-10">
+            <!-- Header, con el nombre y el logo de la pagina -->
+            <img id="logo_principal" src="images/logo_principal.png" alt="Logo web">
+            <h1 class="col-2" id="nom_pagina">Apple Music</h1>
+            <!-- Botones funcionales de inicio de sesion y registrarse -->
+            <div class="botones_sup">
+                <p id="user">Quevedo</p>
+                <div id="photo">
+                    <img id="photoi1" class="foto_perfil" src="images/artistas/quevedo.jpg" alt="f perfil sin nada">
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <aside class="col-2">
+                <!-- Menu con 3 opciones funcionales -->
+                <ul>
+                    <li class="menu" id="bt_inicio">
+                        <img class="logos_menu" src="images/apple.png" alt="Logo web">
+                        <a class="link_menu" href="#">Inicio</a>
+                    </li>
+                </ul>
+                <!-- Links extra funcionales para la politica de privacidad y cookies -->
+                <div id="links" class="links col-2">
+                    <a id="pol_priv" href="politica_priv.html">Privacidad</a>
+                    <a id="cookies" href="cookies.html">Cookies</a>
+                </div>
+            </aside>
+            <main class="col-8">
+                <div class="col-8 main" id="main1">
+                    <h2>Albumes publicados</h2>
+                    <div id="musica_españa">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica" src="images/artistas/quevedo.jpg" alt="foto quevedo">
+                            </div>
+                            <h3 class="nombre_cancion">All by Quevedo</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica" src="images/artistas/taylor.jpg" alt="foto taylor">
+                            </div>
+                            <h3 class="nombre_cancion">Nena linda</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica" src="images/artistas/melendi.jpg" alt="foto melendi">
+                            </div>
+                            <h3 class="nombre_cancion">Temardos pegaos</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica" src="images/artistas/badbunny.jpg" alt="foto bad bunny">
+                            </div>
+                            <h3 class="nombre_cancion">Veranito</h3>
+                        </div>
+                    </div>
+                    <h2>Canciones publicadas</h2>
+                    <div id="musica_novedades">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.1.jpg" alt="Icono Amantes">
+                            </div>
+                            <h3 class="nombre_cancion">AMANTES</h3>
+                        </div> 
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.2.png" alt="Icono Party en el Barrio">
+                            </div>
+                            <h3 class="nombre_cancion">Party en el Barrio</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.3.jpg" alt="Icono Soltera">
+                            </div>
+                            <h3 class="nombre_cancion">Soltera</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.4.jpg" alt="Icono Prohibidox">
+                            </div>
+                            <h3 class="nombre_cancion">Prohibidox</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.5.jpg" alt="Icono La Copa">
+                            </div>
+                            <h3 class="nombre_cancion">La Copa</h3>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <script src="script/perfil_y_artista.js"></script>
+    </body>
+</html>

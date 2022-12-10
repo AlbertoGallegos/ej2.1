@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link href='style/style.css' rel='stylesheet'>
+        <link href='style/sesion_abierta.css' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body >
+        <header class="col-10">
+            <!-- Header, con el nombre y el logo de la pagina -->
+            <img id="logo_principal" src="images/logo_principal.png" alt="Logo web">
+            <h1 class="col-2" id="nom_pagina">Apple Music</h1>
+            <!-- Botones funcionales de inicio de sesion y registrarse -->
+            <div class="botones_sup">
+                <p id="user"></p>
+                <div id="photo">
+                    <img id="photoi1" class="foto_perfil" src="images/user.png" alt="f perfil sin nada">
+                    <div id="photoi2"></div>
+                </div>
+            </div>
+            <div class="buscador">
+                <button class="buscadorbtn">Buscador</button>
+            </div>
+        </header>
+        <div class="row">
+            <aside class="col-2">
+                <!-- Menu con 3 opciones funcionales -->
+                <ul>
+                    <li class="menu" id="bt_inicio">
+                        <img class="logos_menu" src="images/apple.png" alt="Logo web">
+                        <a class="link_menu" href="#">Inicio</a>
+                    </li>
+                    <li class="menu" id="bt_buscar">   
+                        <img class="logos_menu" src="images/lupa.png" alt="Logo web"> 
+                        <a class="link_menu" href="#">Buscar</a>
+                    </li>
+                    <li class="menu">
+                        <img class="logos_menu" src="images/archivo.png" alt="Logo web">
+                        <a class="link_menu" href="#">Archivo</a>
+                    </li>
+                    <li class="menu" id="bt_crearlista">
+                        <img class="logos_menu" src="images/wave.png" alt="Logo web">
+                        <a class="link_menu" href="#">Crear Listas</a>
+                    </li>
+                    <li class="menu" id="bt_mislistas">
+                        <img class="logos_menu" src="images/headphones.png" alt="Logo web">
+                        <a class="link_menu" href="#">Mis Listas</a>
+                    </li>
+                </ul>
+                <!-- Links extra funcionales para la politica de privacidad y cookies -->
+                <div id="links" class="links col-2">
+                    <a id="pol_priv" href="politica_priv.html">Privacidad</a>
+                    <a id="cookies" href="cookies.html">Cookies</a>
+                </div>
+            </aside>
+            <main class="col-8">
+                <div class="col-8 main" id="main1">
+                    <h2>Top España</h2>
+                    <div id="musica_españa">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_1.jpg" alt="Icono Quedate">
+                                
+                            </div>
+                            <h3 class="nombre_cancion" href="cuenta.html">Quevedo:Bzrp</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.png" alt="Icono Vista Al Mar">
+                            </div>
+                            <h3 class="nombre_cancion">Vista al Mar</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.jpg" alt="Icono La Bachata">
+                            </div>
+                            <h3 class="nombre_cancion" id="prueba">La Bachata</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_4.jpg" alt="Icono Sin Señal">
+                            </div>
+                            <h3 class="nombre_cancion">Sin Señal</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_5.jpg" alt="Icono DESPECHÁ">
+                            </div>
+                            <h3 class="nombre_cancion">DESPECHÁ</h3>
+                        </div>
+                    </div>
+                    <h2>Novedades</h2>
+                    <div id="musica_novedades">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.1.jpg" alt="Icono Amantes">
+                            </div>
+                            <h3 class="nombre_cancion">AMANTES</h3>
+                        </div> 
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.2.png" alt="Icono Party en el Barrio">
+                            </div>
+                            <h3 class="nombre_cancion">Party en el Barrio</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.3.jpg" alt="Icono Soltera">
+                            </div>
+                            <h3 class="nombre_cancion">Soltera</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.4.jpg" alt="Icono Prohibidox">
+                            </div>
+                            <h3 class="nombre_cancion">Prohibidox</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.5.jpg" alt="Icono La Copa">
+                            </div>
+                            <h3 class="nombre_cancion">La Copa</h3>
+                        </div>
+                    </div>
+                    <h2>Clasicos 2000</h2>
+                    <div id="musica_clasicos">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.1.jpg" alt="Icono Umbrella">
+                            </div>
+                            <h3 class="nombre_cancion">Umbrella</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.2.jpg" alt="Icono This Love">
+                            </div>
+                            <h3 class="nombre_cancion">This Love</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.3.jpg" alt="Icono I Gotta Feeling">
+                            </div>
+                            <h3 class="nombre_cancion">I Gotta Feeling</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.4.jpg" alt="Icono Last Friday Night">
+                            </div>
+                            <h3 class="nombre_cancion">Last Friday Night</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.5.jpg" alt="Icono Viva La Vida">
+                            </div>
+                            <h3 class="nombre_cancion">Viva La Vida</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 main" id="main_perfil">
+                    <h2>Artistas Favoritos</h2>
+                    <div id="musica_españa">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica artista" src="images/artistas/quevedo.jpg" alt="foto quevedo">
+                            </div>
+                            <h3 class="nombre_cancion">Quevedo</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica artista" src="images/artistas/taylor.jpg" alt="foto taylor">
+                            </div>
+                            <h3 class="nombre_cancion">Taylor Swift</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica artista" src="images/artistas/melendi.jpg" alt="foto melendi">
+                            </div>
+                            <h3 class="nombre_cancion">Melendi</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica artista" src="images/artistas/badbunny.jpg" alt="foto bad bunny">
+                            </div>
+                            <h3 class="nombre_cancion">Bad Bunny</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica artista" src="images/artistas/estopa.jpg" alt="foto estopa">
+                            </div>
+                            <h3 class="nombre_cancion">Estopa</h3>
+                        </div>
+                    </div>
+                    <h2>Canciones más escuchadas</h2>
+                    <div id="musica_novedades">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.1.jpg" alt="Icono Amantes">
+                            </div>
+                            <h3 class="nombre_cancion">AMANTES</h3>
+                        </div> 
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.2.png" alt="Icono Party en el Barrio">
+                            </div>
+                            <h3 class="nombre_cancion">Party en el Barrio</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.3.jpg" alt="Icono Soltera">
+                            </div>
+                            <h3 class="nombre_cancion">Soltera</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.4.jpg" alt="Icono Prohibidox">
+                            </div>
+                            <h3 class="nombre_cancion">Prohibidox</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_2.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_2.5.jpg" alt="Icono La Copa">
+                            </div>
+                            <h3 class="nombre_cancion">La Copa</h3>
+                        </div>
+                    </div>
+                    <h2>Canciones Favoritas</h2>
+                    <div id="musica_clasicos">
+                        <div id="l1" class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.1.jpg" alt="Icono Umbrella">
+                            </div>
+                            <h3 class="nombre_cancion">Umbrella</h3>
+                        </div>
+                        <div id="l2" class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.2.jpg" alt="Icono This Love">
+                            </div>
+                            <h3 class="nombre_cancion">This Love</h3>
+                        </div>
+                        <div id="l3" class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.3.jpg" alt="Icono I Gotta Feeling">
+                            </div>
+                            <h3 class="nombre_cancion">I Gotta Feeling</h3>
+                        </div>
+                        <div id="l4" class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.4.jpg" alt="Icono Last Friday Night">
+                            </div>
+                            <h3 class="nombre_cancion">Last Friday Night</h3>
+                        </div>
+                        <div id="l5" class="cancion">
+                            <div class="position">
+                                <img class="play" id="cancion_3.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_3.5.jpg" alt="Icono Viva La Vida">
+                            </div>
+                            <h3 class="nombre_cancion">Viva La Vida</h3>
+                        </div>
+                    </div>
+                    <h2>Mis Listas</h2>
+                    <div id="lista_reproduccion">
+                        <div class="lista">
+                            <h3 class="nombre_lista">Lista 1</h3>
+                            <h3 class="nombre_lista">Lista 2</h3>
+                            <h3 class="nombre_lista">Lista 3</h3>
+                            <h3 class="nombre_lista">Lista 4</h3>
+                            <h3 class="nombre_lista">Lista 5</h3>
+                            <h3 class="nombre_lista">Lista 6</h3>
+                            <h3 class="nombre_lista">Lista 7</h3>
+                            <h3 class="nombre_lista">Lista 8</h3>
+                            <h3 class="nombre_lista">Lista 9</h3>
+                        </div>
+                    </div>
+                    <h2>Perfiles seguidos</h2>
+                    <div id="musica_clasicos">
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica perfil" src="images/perfil/4.jpg" alt="Icono Umbrella">
+                            </div>
+                            <h3 class="nombre_cancion">Rocío</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica perfil" src="images/perfil/5.jpg" alt="Icono This Love">
+                            </div>
+                            <h3 class="nombre_cancion">Teresa</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica perfil" src="images/perfil/8.jpg" alt="Icono I Gotta Feeling">
+                            </div>
+                            <h3 class="nombre_cancion">Jaime</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica perfil" src="images/perfil/2.jpg" alt="Icono Last Friday Night">
+                            </div>
+                            <h3 class="nombre_cancion">Maika</h3>
+                        </div>
+                        <div class="cancion">
+                            <div class="position">
+                                <img class="musica perfil" src="images/perfil/6.jpg" alt="Icono Viva La Vida">
+                            </div>
+                            <h3 class="nombre_cancion">Antonio</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 main" id="maincuenta">
+                    <h1 id="tit_form">Mi información</h1>
+                    <a href="#" id="bt_main" class="bt_cerrar"><image src="images/delete-sign.png" id="cruz"></image></a>
+                    <form id="form1" method="post" onsubmit="return modifyCookie(event)">
+                        <div class="campos_form">
+                            <p class="subtitulo_form">Mi nombre de usuario:</p><p class="p" id="p1"></p>
+                            <label for="nuname">Nuevo nombre de usuario:</label><br>
+                            <input class="input" type="text" id="nuname" name="nuname"><br><br>
+                            <p class="subtitulo_form">Mi contraseña:</p><p class="p" id="p2"></p>
+                            <label for="npword">Nueva contraseña:</label><br>
+                            <input class="input" type="password" id="npword" maxlength="8" pattern="[A-Za-z0-9]+" title="Solo letras y números, max 8 caracteres" name="npword"><br><br>
+                            <p class="subtitulo_form">Mi nombre completo:</p><p class="p" id="p3"></p>
+                            <label for="nfname">Nuevo nombre completo:</label><br>
+                            <input class="input" type="text" id="nfname" size="30" name="nfname"><br><br>
+                            <p class="subtitulo_form">Mi email:</p><p class="p" id="p4"></p>
+                            <label for="nemail">Nuevo email:</label><br>
+                            <input class="input" type="email" id="nemail" size="30" placeholder="nombre@dominio.ext" name="nemail"><br><br>
+                            <p class="subtitulo_form">Mi fecha de nacimiento:</p><p class="p" id="p5"></p>
+                            <label for="nfecnac"> Nueva fecha de nacimiento:</label><br>
+                            <input class="input" type="date" id="nfecnac" name="nfecnac"><br><br>
+                            <p class="subtitulo_form">Mi foto de perfil:</p><img id="p6" src="">
+                            <label for="nfperfil">Nueva foto de perfil:</label><br>
+                            <input type="file" accept="image/*" id="nfperfil" name="nfperfil"><br><br>
+                            <input class="bt_form" type="submit" value="Guardar cambios">
+                            <input class="bt_form" type="reset" value="Borrar campos">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-8 main" id="main_listas">
+                    <h2>Mi lista favorita</h2>
+                    <div class="content-list">
+                    <div>Mi niña bella</div>
+                    <div>Cosita linda</div>
+                    <div>Umbrella</div>
+                    <div>This Love</div>
+                    <div>I gotta feeling</div>
+                    <div>La copa</div>
+                    </div>
+                </div>
+                <div class="col-8 main" id="crearlista_main">
+                    <a href="#" id="bt_main_lista" class="bt_cerrar"><image src="images/delete-sign.png" id="cruz"></image></a>
+                    <div id="crearlista">
+                        <h1 id="tit_form">Crea una Lista</h1>
+                        <form id="form2" method="post">
+                            <div class="campos_form">
+                                <label for="titlista">Titulo de la lista:</label><br>
+                                <input class="input" type="text" id="tilista" name="titlista" required><br><br>
+                                <label for="addlista">Selecciona las canciones</label><br>
+                                <div class="options">
+                                    <input type="checkbox" id="cancion1" name="cancion1" value="Sin Señal">
+                                    <label for="vehicle1"> Sin Señal</label><br>
+                                    <input type="checkbox" id="cancion2" name="cancion2" value="Soltera">
+                                    <label for="vehicle2"> Soltera</label><br>
+                                    <input type="checkbox" id="cancion3" name="cancion3" value="La Copa">
+                                    <label for="vehicle3"> La Copa</label><br>
+                                    <input type="checkbox" id="cancion4" name="cancion4" value="Viva La Vida">
+                                    <label for="vehicle3"> Viva La Vida</label><br>
+                                    <input type="checkbox" id="cancion5" name="cancion5" value="Umbrella">
+                                    <label for="vehicle3"> Umbrella</label><br>
+                                    <input type="checkbox" id="cancion6" name="cancion6" value="This Love">
+                                    <label for="vehicle3"> This Love</label>
+                                </div>
+                                
+                                <input class="bt_form" type="submit" value="Guardar Lista">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="menu_perfil" id="menu_perfil">
+            <ul>
+                <li>
+                    <button class="opciones_menu" id="bt_cuenta">Cuenta</button>
+                </li>
+                <li>   
+                    <button class="opciones_menu" id="bt_perfil">Perfil</button>
+                </li>
+                <li>
+                    <button class="opciones_menu" id="cerrar_sesion">Cerrar Sesión</button>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="myBuscador" class="buscador-contenido">
+            <input type="text" id="myInput" placeholder="Busca una canción..." >  
+            <li class="item">
+                <a href="#" id="c1" class="like"></a>
+                <a id="cancion_1.mp3" class="campob" href="#">Umbrella</a>
+            </li>
+            <li class="item">
+                <a href="#" id="c2" class="like"></a>
+                <a id="cancion_2.mp3" class="campob" href="#">This Love</a>
+            </li>
+            <li class="item">
+                <a href="#" id="c3" class="like" ></a>
+                <a id="cancion_3.mp3" class="campob" href="#">I Gotta Feeling</a>
+            </li>
+            <li class="item">
+                <a href="#" id="c4" class="like" ></a>
+                <a id="cancion_4.mp3" class="campob" href="#">Las Friday Night</a>
+            </li>
+            <li class="item">
+                <a href="#" id="c5" class="like" ></image></a>
+                <a id="cancion_5.mp3" class="campob" href="#">Viva la vida</a>
+            </li>
+        </div>
+        <div class="overlay" id="overlay">
+            <div class="ventana" id="ventana_cerrar">
+                <h3>¿Estas seguro de que quieres cerrar sesión?</h3>
+                <button id="si_cerrar">Si</button>
+                <button id="no_cerrar">No</button>
+            </div>
+        </div>
+        <div class="barra_musica" id="barra_musica">
+
+        </div>
+        <script src="script/cookies.js"></script>
+        <script src="script/musica.js"></script>
+        <script src="script/sesion_abierta.js"></script>
+        <script src="script/cerra_sesion.js"></script>
+        <script src="script/cuenta.js"></script>
+        <script src="script/crear_lista.js"></script>
+        <script src="script/perfil.js"></script>
+         <script src="script/modificarlista.js"></script>
+    </body>
+</html>

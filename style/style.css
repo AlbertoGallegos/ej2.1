@@ -48,39 +48,43 @@ header {
     font-size: 25px;
 }
 
+/* Boton registrarse */
+
 #bot_reg {
     position: absolute;
-    margin-top: 5px;
-    right: 140px;
-    padding: 4px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid rgb(27, 236, 149);
+    margin-top: 10px;
+    right: 120px;
+    line-height: 20px;
+    border: none;
+    background: rgb(27, 236, 149);
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 #bot_reg:hover {
-    color: black;
     background-color: white;
 }
+
+/* Boton iniciar sesión */
 
 #bot_ini {
     position: absolute;
-    margin-top: 5px;
+    margin-top: 10px;
     right: 10px;
-    padding: 4px;
-    background-color: none;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    border: 2px solid rgb(27, 236, 149);
+    line-height: 20px;
+    border: none;
+    background: rgb(27, 236, 149);
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 #bot_ini:hover {
-    color: black;
     background-color: white;
 }
 
+/* Aside*/
 aside {
     top: 40px;
     left: 0;
@@ -136,10 +140,12 @@ aside .menu a:hover {
 
 aside .links {
     position: fixed;
-    bottom: 60px;
+    bottom: 70px;
     display: inline-block;
     text-align: center;
+    transition: .3s ease all;
 }
+
 
 aside .links a {
     text-decoration: none;
@@ -149,30 +155,8 @@ aside .links a {
     width: 100%;
 }
 
-.play {
-    position: absolute;
-    z-index: 2;
-    width: 75%;
-    padding: 20px;
-    opacity: 0%;
-}
-
-.play:hover {
-    opacity: 90%;
-}
-/*
-main {
-    top: 30px;
-    padding: 20px 0px;
-    right: 0;
-    position: absolute;
-    background-color: rgb(27, 236, 149);
-    z-index: -1;
-}*/
-
-
 /* Ventana pop-up con sus animaciones*/
-.overlay {
+.overlay { /* clase overlay que vale para el ini y el reg */
     background-color: rgba(0,0,0,.3);
     position: fixed;
     top:0;
@@ -182,30 +166,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
 }
 
-.overlay.active {
-    visibility: visible;
-}
-
-.ventana {
+.ventana { /* clase ventana que vale para el ini y el reg */
     background-color: rgb(8, 99, 11);
     text-align: center;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
     border-radius: 3px;
     padding: 20px;
     width: 600px;
-    
-    transition: .3s ease all;
-    transform: scale(0.7);
-    opacity: 0;
-
-}
-
-.ventana.active {
-    opacity: 1;
-    transform: scale(1);
 }
 
 #cruz {
@@ -218,46 +187,13 @@ main {
     float: right;
     text-align: right;
     color: black;
-    transition: .3s ease all;
 }
 
-.ventana h1 {
-    opacity: 0;
-}
-
-.ventana.active h1 {
-    animation: entradaTitulo .8s ease .4s forwards;
-}
-
-@keyframes entradaTitulo {
-    from {
-        transform: translateY(-25px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-.ventana #form1 {
+.ventana form {
     padding-bottom: 10px;
-    opacity: 0;
 }
 
-.ventana.active #form1 {
-    animation: entradaFormulario .8s ease .6s forwards;
-}
-
-@keyframes entradaFormulario {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
+/* Botón iniciar sesión dentro del iniciar seisón */
 .ventana #form1 #bot_inicio {
     height: 20px;
     line-height: 20px;
@@ -267,16 +203,34 @@ main {
     border-radius: 3px;
     font-size: 14px;
     cursor: pointer;
-    transition: .3s ease all;
 }
 
 .ventana #form1 #bot_inicio:hover {
     background: rgba(27, 236, 149, .5);
 }
 
-/*Registrase*/
+/* Boton iniciar sesión dentro del reg */
+.ventana #bt_abrir_ini_reg {
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    color:black;
+    background: rgb(27, 236, 149);
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
 
-.main1 {
+.ventana #bt_abrir_ini_reg:hover {
+    background: rgba(27, 236, 149, .5);
+}
+
+.logo_form {
+    width: 40px;
+}
+
+/* main generico */
+.main {
     top: 30px;
     padding: 20px 0px;
     right: 0;
@@ -286,62 +240,18 @@ main {
     visibility: visible;
 }
 
-.main1.active {
-    visibility: hidden;
-}
-
-.reg {
-    height: 100%;
-    top: 25px;
-    right: 0;
-    height: 100%;
-    position: absolute;
-    background-color: rgb(27, 236, 149);
-    z-index: -1;
-    visibility: hidden;
-    align-items: center;
-    text-align: center;
-
-    transition: .3s ease all;
-    transform: scale(0.7);
-    opacity: 0;
-
-}
-
-.reg.active {
-    visibility: visible;
-    opacity: 1;
-    transform: scale(1);
-}
-
-.reg #tit_form {
-    padding-left: 5px;
-}
-
-.reg #form2 {
-    padding-left: 5px;
-    margin-bottom: 12%;
-}
-
-.reg .bt_main1 {
-    position: absolute;
-    top: 25px;
-    right: 20px;
-    float: right;
-    text-align: right;
-    color: black;
-    transition: .3s ease all;
-}
-
-.reg #bt_abrir_ini_reg {
-    bottom: 50px;
-}
-
 /* Disposición especial del main en pantallas muy largas (alto especial de pantalla) */
 @media screen and (min-height:1078px) {
     main {
         height: 100%;
     }
+}
+
+#musica_ultima {
+    padding: 0px 50px;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
 }
 
 #musica_españa {
@@ -369,6 +279,10 @@ main {
 /* Disposición ordenador grande (evitar scroll horizontal en pantallas grandes) */
 @media screen and (min-width:1290px) {
 	
+    #musica_ultima {
+    	overflow-x: hidden;	
+    }
+
     #musica_españa {
     	overflow-x: hidden;	
     }
@@ -382,39 +296,17 @@ main {
     }
 }
 
+/* Canciones del main*/
+
 .cancion {
     width: 150px;
     padding: 20px;
 }
 
-.cancion_2 {
-    width: 150px;
-    padding: 20px;
-}
-
-.cancion_3 {
-    width: 150px;
-    padding: 20px;
-}
-
-audio {
-    position: absolute;
-    width: 150px;
-    height: 150px;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0%;
-    background-color: black;
-}
-
-audio:hover {
-    opacity: 70%;
-}
-
 .musica {
     width: 150px;
     z-index: 0;
+    border-radius: 25%;
 }
 
 .position {
@@ -426,8 +318,27 @@ audio:hover {
     text-align: center;
 }
 
+.cuenta_atras {
+    position: static;
+    z-index: 2;
+    text-align: center;
+    font-size: 20px;
+}
+
 h2 {
     margin-left: 8px;
+}
+
+.play {
+    position: absolute;
+    z-index: 2;
+    width: 75%;
+    padding: 20px;
+    opacity: 0%;
+}
+
+.play:hover {
+    opacity: 90%;
 }
 
 footer {
@@ -438,7 +349,9 @@ footer {
     position: fixed;
     bottom: 0;
     left: 0;
+    transition: 5s ease all;
 }
+
 
 #texto_footer {
     color:white;

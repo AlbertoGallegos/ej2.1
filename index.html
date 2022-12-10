@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inicio</title>
         <link href='style/style.css' rel='stylesheet'>
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <header class="col-10">
@@ -36,192 +36,182 @@
                     </li>
                 </ul>
                 <!-- Links extra funcionales para la politica de privacidad y cookies -->
-                <div class="links col-2">
+                <div id="links" class="links col-2">
                     <a id="pol_priv" href="politica_priv.html">Privacidad</a>
                     <a id="cookies" href="cookies.html">Cookies</a>
                 </div>
             </aside>
             <main class="col-8">
-                <div class="col-8 main1" id="main1">
-                
+                <div class="col-8 main" id="main1">
+                    <h2>Últimos lanzamientos</h2>
+                    <div id="musica_ultima">
+                        <div class="cancion">
+                            <p class="cuenta_atras"></p>
+                            <div class="position">
+                                <img class="play" id="cancion_1.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_4.1.jpg" alt="Extasis">
+                                
+                            </div>
+                            <h3 class="nombre_cancion" href="cuenta.html">Éxtasis</h3>
+                        </div>
+                        <div class="cancion">
+                            <p class="cuenta_atras"></p>
+                            <div class="position">
+                                <img class="play" id="cancion_2.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_4.2.jpg" alt="Lift Me Up">
+                            </div>
+                            <h3 class="nombre_cancion">Lift Me Up</h3>
+                        </div>
+                        <div class="cancion">
+                            <p class="cuenta_atras"></p>
+                            <div class="position">
+                                <img class="play" id="cancion_3.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_4.3.jpg" alt="Icono Dime Quien">
+                            </div>
+                            <h3 class="nombre_cancion" id="prueba">Dime Quién????</h3>
+                        </div>
+                        <div class="cancion">
+                            <p class="cuenta_atras"></p>
+                            <div class="position">
+                                <img class="play" id="cancion_4.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_4.4.jpg" alt="Icono Camarón">
+                            </div>
+                            <h3 class="nombre_cancion">Camarón</h3>
+                        </div>
+                        <div class="cancion">
+                            <p class="cuenta_atras"></p>
+                            <div class="position">
+                                <img class="play" id="cancion_5.mp3" src="images/play.png" alt="Icono Play" width="100%">
+                                <img class="musica" src="images/cancion_4.5.jpg" alt="Icono Salir Con Vida">
+                            </div>
+                            <h3 class="nombre_cancion">Salir Con Vida</h3>
+                        </div>
+                    </div>
                     <h2>Top España</h2>
                     <div id="musica_españa">
                         <div class="cancion">
                             <div class="position">
-                                <img class="play" src="images/play.png" alt="Icono Play" width="100%" onclick = "playAud()">
+                                <img class="play" id="cancion_1.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_1.jpg" alt="Icono Quedate">
-                                <audio id="cancion_1aud"> 
-                                    <source src="images/cancion_1.mp3" type="audio/mpeg">
-                                </audio>
+                                
                             </div>
-                                <h3 class="nombre_cancion">Quevedo:Bzrp</h3>
+                            <h3 class="nombre_cancion" href="cuenta.html">Quevedo:Bzrp</h3>
                         </div>
                         <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_2.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_2.png" alt="Icono Vista Al Mar">
-                                <audio controls id="cancion_2aud"> 
-                                    <source src="images/cancion_2.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
-                                <h3 class="nombre_cancion">Vista al Mar</h3>
+                            <h3 class="nombre_cancion">Vista al Mar</h3>
                         </div>
                         <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_3.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_3.jpg" alt="Icono La Bachata">
-                                <audio controls id="cancion_3aud"> 
-                                    <source src="images/cancion_3.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
-                            <h3 class="nombre_cancion">La Bachata</h3>
+                            <h3 class="nombre_cancion" id="prueba">La Bachata</h3>
                         </div>
                         <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_4.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_4.jpg" alt="Icono Sin Señal">
-                                <audio controls id="cancion_4aud"> 
-                                    <source src="images/cancion_4.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Sin Señal</h3>
                         </div>
                         <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_5.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_5.jpg" alt="Icono DESPECHÁ">
-                                <audio controls id="cancion_5aud"> 
-                                    <source src="images/cancion_5.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">DESPECHÁ</h3>
                         </div>
                     </div>
                     <h2>Novedades</h2>
                     <div id="musica_novedades">
-                        <div class="cancion_2">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_2.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_2.1.jpg" alt="Icono Amantes">
-                                <audio controls id="cancion_2.1aud"> 
-                                    <source src="images/cancion_2.1.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">AMANTES</h3>
                         </div> 
-                        <div class="cancion_2">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_2.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_2.2.png" alt="Icono Party en el Barrio">
-                                <audio controls id="cancion_2.2aud"> 
-                                    <source src="images/cancion_2.2.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Party en el Barrio</h3>
                         </div>
-                        <div class="cancion_2">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_2.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_2.3.jpg" alt="Icono Soltera">
-                                <audio controls id="cancion_2.3aud"> 
-                                    <source src="images/cancion_2.3.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Soltera</h3>
                         </div>
-                        <div class="cancion_2">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_2.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_2.4.jpg" alt="Icono Prohibidox">
-                                <audio controls id="cancion_2.4aud"> 
-                                    <source src="images/cancion_2.4.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Prohibidox</h3>
                         </div>
-                        <div class="cancion_2">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_2.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_2.5.jpg" alt="Icono La Copa">
-                                <audio controls id="cancion_2.5aud"> 
-                                    <source src="images/cancion_2.5.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">La Copa</h3>
                         </div>
                     </div>
                     <h2>Clasicos 2000</h2>
                     <div id="musica_clasicos">
-                        <div class="cancion_3">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_3.1.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_3.1.jpg" alt="Icono Umbrella">
-                                <audio controls id="cancion_3.1aud"> 
-                                    <source src="images/cancion_3.1.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Umbrella</h3>
                         </div>
-                        <div class="cancion_3">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_3.2.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_3.2.jpg" alt="Icono This Love">
-                                <audio controls id="cancion_3.2aud"> 
-                                    <source src="images/cancion_3.2.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">This Love</h3>
                         </div>
-                        <div class="cancion_3">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_3.3.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_3.3.jpg" alt="Icono I Gotta Feeling">
-                                <audio controls id="cancion_3.3aud"> 
-                                    <source src="images/cancion_3.3.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">I Gotta Feeling</h3>
                         </div>
-                        <div class="cancion_3">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_3.4.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_3.4.jpg" alt="Icono Last Friday Night">
-                                <audio controls id="cancion_3.4aud"> 
-                                    <source src="images/cancion_3.4.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Last Friday Night</h3>
                         </div>
-                        <div class="cancion_3">
+                        <div class="cancion">
                             <div class="position">
+                                <img class="play" id="cancion_3.5.mp3" src="images/play.png" alt="Icono Play" width="100%">
                                 <img class="musica" src="images/cancion_3.5.jpg" alt="Icono Viva La Vida">
-                                <audio controls id="cancion_3.5aud"> 
-                                    <source src="images/cancion_3.5.mp3" type="audio/mpeg">
-                                </audio>
                             </div>
                             <h3 class="nombre_cancion">Viva La Vida</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-8 reg" id="reg">
-                    <a href="#" id="bt_main1" class="bt_main1"><image src="images/delete-sign.png" id="cruz"></image></a>
-                    <h1 id="tit_form">Formulario de Registro</h1>
-                    <form id="form2" method="post" onsubmit="checkCookie()">
-                        <label for="uname">Nombre de usuario:</label><br>
-                        <input type="text" id="uname" name="uname" required><br><br>
-                        <label for="pword">Contraseña:</label><br>
-                        <input type="password" id="pword" maxlength="8" pattern="[A-Za-z0-9]+" title="Solo letras y números, max 8 caracteres" name="pword" required><br><br>
-                        <label for="fname">Nombre completo:</label><br>
-                        <input type="text" id="fname" size="30" name="fname" required><br><br>
-                        <label for="email">Email:</label><br>
-                        <input type="email" id="email" size="30" placeholder="nombre@dominio.ext" name="email" required><br><br>
-                        <label for="fecnac">Fecha de nacimiento:</label><br>
-                        <input type="date" id="fecnac" name="fecnac" required><br><br>
-                        <label for="fperfil">Escoge tu foto de perfil:</label><br>
-                        <input type="file" accept="image/*" id="fperfil" name="fperfil"><br><br>
-                        <input type="checkbox" id="acond" name="acep_condi" value="Accept">
-                        <label for="acond">He leido y acepto las Condiciones de uso</label><br><br>
-                        <input type="submit" value="Registrarse">
-                        <input type="reset" value="Borrar campos">
-                    </form>
-                    <button id="bt_abrir_ini_reg">Iniciar Sesión</button>
-                </div>
-                <script src="script/reg.js"></script>
-                <script src="script/cookies.js"></script>
             </main>
         </div>
         <div class="overlay" id="overlay">
-            <div class="ventana" id="ventana">
+            <div class="ventana" id="ventana_ini">
                 <a href="#" id="bt_cerrar" class="bt_cerrar"><image src="images/delete-sign.png" id="cruz"></image></a>
                 <h1>Iniciar Sesión</h1>
-                <form action="/action_page.php" id="form1"  method="post" onsubmit="checkCookie_ini()">
+                <image src="images/google.png" class="logo_form" id="reggoog"></image>
+                <image src="images/facebook.png" class="logo_form"></image>
+                <form id="form1"  method="post" onsubmit=" return checkCookie_ini(event)">
                     <label for="uname">Nombre de usuario:</label><br>
                     <input type="text" id="uname1" name="uname" required><br><br>
                     <label for="pword">Contraseña:</label><br>
@@ -229,13 +219,39 @@
                     <input id="bot_inicio" type="submit" value="Iniciar sesión">
                 </form>
             </div>
-            <script src="script/ini.js"></script>
-            <script src="script/cookies_ini.js"></script>
+            <div class="ventana" id="ventana_reg">
+                <a href="#" id="bt_cerrar1" class="bt_cerrar"><image src="images/delete-sign.png" id="cruz"></image></a>
+                <h1 id="tit_form">Formulario de Registro</h1>
+                <image src="images/google.png" class="logo_form" id="reggoog"></image>
+                <image src="images/facebook.png" class="logo_form"></image>
+                <form id="form2" method="post" onsubmit="return checkCookie(event)">
+                    <label for="uname">Nombre de usuario:</label><br>
+                    <input type="text" id="uname" name="uname" required><br><br>
+                    <label for="pword">Contraseña:</label><br>
+                    <input type="password" id="pword" maxlength="8" pattern="[A-Za-z0-9]+" title="Solo letras y números, max 8 caracteres" name="pword" required><br><br>
+                    <label for="fname">Nombre completo:</label><br>
+                    <input type="text" id="fname" size="30" name="fname" required><br><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" size="30" placeholder="nombre@dominio.ext" name="email" required><br><br>
+                    <label for="fecnac">Fecha de nacimiento:</label><br>
+                    <input type="date" id="fecnac" name="fecnac" required><br><br>
+                    <label for="fperfil">Escoge tu foto de perfil:</label><br>
+                    <input type="file" accept="image/*" id="fperfil" name="fperfil"><br><br>
+                    <input type="checkbox" id="acond" name="acep_condi" value="Accept">
+                    <label for="acond">He leido y acepto las Condiciones de uso</label><br><br>
+                    <input type="submit" value="Registrarse">
+                    <input type="reset" value="Borrar campos">
+                </form>
+                <button id="bt_abrir_ini_reg">Iniciar Sesión</button>
+            </div>
         </div>
-        <footer class="col-10">
+        <footer id="footer" class="col-10">
             <!-- Footer con link funcional para registrar nuevos usuarios -->
-            <a id="texto_footer" href="registrarse.html">Regístrate ahora para acceder a todo el contenido</a>
+            <a id="texto_footer">Regístrate ahora para acceder a todo el contenido</a>
         </footer>
-        <script src="script/script.js"></script>
+        <script src="script/cookies.js"></script>
+        <script src="script/inicio_sesion.js"></script>
+        <script src="script/registrarse.js"></script>   
+        <script src="script/countdown.js"></script>       
     </body>
 </html>
