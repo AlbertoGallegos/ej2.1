@@ -5,6 +5,7 @@ let bt_cerrar_reg = document.getElementById("bt_main1");
 
 
 bt_abrir_reg.addEventListener("click", function(){
+    alert("hh");
     reg.classList.add("active");
     main1.classList.add("active");
 });

@@ -221,20 +221,21 @@
             <div class="ventana" id="ventana">
                 <a href="#" id="bt_cerrar" class="bt_cerrar"><image src="images/delete-sign.png" id="cruz"></image></a>
                 <h1>Iniciar Sesión</h1>
-                <form action="/action_page.php" id="form1"  method="post">
+                <form action="/action_page.php" id="form1"  method="post" onsubmit="checkCookie_ini()">
                     <label for="uname">Nombre de usuario:</label><br>
-                    <input type="text" id="uname" name="uname" required><br><br>
+                    <input type="text" id="uname1" name="uname" required><br><br>
                     <label for="pword">Contraseña:</label><br>
-                    <input type="password" id="pword" maxlength="8" pattern="[A-Za-z0-9]+" title="Solo letras y números, max 8 caracteres" name="pword" required><br><br>                        
+                    <input type="password" id="pword1" maxlength="8" pattern="[A-Za-z0-9]+" title="Solo letras y números, max 8 caracteres" name="pword" required><br><br>                        
                     <input id="bot_inicio" type="submit" value="Iniciar sesión">
                 </form>
             </div>
+            <script src="script/ini.js"></script>
+            <script src="script/cookies_ini.js"></script>
         </div>
         <footer class="col-10">
             <!-- Footer con link funcional para registrar nuevos usuarios -->
             <a id="texto_footer" href="registrarse.html">Regístrate ahora para acceder a todo el contenido</a>
         </footer>
         <script src="script/script.js"></script>
-        <script src="script/ini.js"></script>
     </body>
 </html>

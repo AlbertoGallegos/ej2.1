@@ -1,3 +1,5 @@
+/* Registro */
+
 let u_name = document.getElementById("uname");
 let p_word = document.getElementById("pword");
 let f_name = document.getElementById("fname");
